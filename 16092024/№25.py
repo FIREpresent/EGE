@@ -22,4 +22,4 @@ for i in ' 0123456789':
                     if int(s) % 3147 == 0:
                         arr.append(int(s))
 
-print(*sorted(arr))
+print(*sorted(list(set(arr))))
