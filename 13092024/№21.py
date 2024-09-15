@@ -20,11 +20,14 @@ def func2(x, step):
         return func(x + 1, step + 1) or func(x + 2, step + 1) or func(x * 2, step + 1)
     return func(x + 1, step + 1) and func(x + 2, step + 1) and func(x * 2, step + 1)
 
+v = []
 step = 0
 for i in range(1, 39):
     if func(i, step):
-        print(i)
+        v.append(i)
 
 for i in range(1, 39):
     if func2(i, step):
-        print(i)
+        v.append(i)
+
+print(min(set(v)))
