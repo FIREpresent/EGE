@@ -9,5 +9,5 @@ for s in f:
     t_g, t, o = [int(x) for x in s.split()]
     a.append((t_g, t, o))
 
-for i in range(t_g)
+#for i in range(t_g)
 
