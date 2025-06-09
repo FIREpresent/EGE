@@ -1,8 +1,8 @@
 from fnmatch import fnmatch
 
-for i in range(0, 10**9 + 1, 17):
-    if fnmatch(str(i), '1?34567?9'):
-        print(i, i // 17)
+for i in range(0, 10**9 + 1, 23):
+    if fnmatch(str(i), '12345?7?8'):
+        print(i, i // 23)
 
 # 113456759 6673927
 # 133456749 7850397

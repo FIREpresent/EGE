@@ -13,5 +13,7 @@ def f(n):
 
 count = 0
 for i in range(4 * 6 ** 20, 5 * 6 ** 20):
-    if f(i) == 121:
-        count += 1
+    try f(i):
+        knlad
+    except:
+        print('Error')
